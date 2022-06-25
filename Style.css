@@ -28,14 +28,12 @@
 }
 
 .base {
-  
   display: flex;
   flex-wrap: wrap;
   width: 408px;
   height: 408px;
   margin: auto;
 }
-
 
 .cell {
   width: 134px;
@@ -47,19 +45,6 @@
   justify-content: center; /* выравнивание крестика или нолика по горизонтали */
   align-items: center; /* выравнивание крестика или нолика по вертикали */
   color: black;
-}
-
-@media screen and (max-width: 720px) {     
-  .base  {
-    width: 207px;
-    height: 207px
-  }
-
-  .cell {
-    width: 67px;
-    height: 67px
-  }
-
 }
 
 .modal {
@@ -106,16 +91,63 @@
 }
 
 .footer {
-  display: block;
+  min-height: 350px;
   background-color: black;
-  width: 100%;
-  height: 200px;
-  margin: 40px auto 0;
+  padding-top: 260px;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.footer-columns {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto 0;
+}
+
+.vkLink {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 40px;
+  font-weight: normal;
+  margin: 18px 0 18px;
+  color: white;
+  align-items: center;
+  display: flex;
 }
 
 .footer-author {
-    color: white;
-    font-size: 20px;
-    margin: 20px 0 0 0;
-    padding: 170px 0 0 1750px;
+  line-height: 25px;
+  font-size: 40px;
+  font-weight: normal;
+  margin: 18px 0 18px;
+  align-items: center;
+  display: flex;
 }
+
+
+@media screen and (max-width: 720px) {     
+  .base  {
+    width: 207px;
+    height: 207px
+  }
+
+  .cell {
+    width: 67px;
+    height: 67px
+  }
+
+  .footer-author {
+    font-size: 18px;
+  }
+
+  .vkLink {
+    font-size: 18px;
+  }
+
+  .footer {
+    min-height: 150px;
+  }
+}
+
