@@ -36,6 +36,7 @@
   margin: auto;
 }
 
+
 .cell {
   width: 134px;
   border: 1px solid red;
@@ -46,6 +47,19 @@
   justify-content: center; /* выравнивание крестика или нолика по горизонтали */
   align-items: center; /* выравнивание крестика или нолика по вертикали */
   color: black;
+}
+
+@media screen and (max-width: 720px) {
+  .base  {
+    width: 207px;
+    height: 207px
+  }
+
+  .cell {
+    width: 67px;
+    height: 67px
+  }
+
 }
 
 .modal {

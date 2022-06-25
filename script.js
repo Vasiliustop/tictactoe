@@ -1,5 +1,4 @@
 const base = document.querySelector(".base");
-
 const content = document.querySelector(".content");
 const ModalWindow = document.querySelector(".modal");
 const btnModal = document.querySelector(".modal-btn");
@@ -19,7 +18,6 @@ base.addEventListener("mousedown", (event) => {
       }
       move++; // передача хода после каждого клика по игровому полю
       check();
-   
     }
   }
 });
@@ -37,11 +35,12 @@ function check() {
     [0, 4, 8],
     [2, 4, 6],
   ];
+
   for (i = 0; i < arr.length; i++) {
     if (
       boxes[arr[i][0]].textContent == "X" &&
       boxes[arr[i][1]].textContent == "X" &&
-      boxes[arr[i][2]].textContent == "X" 
+      boxes[arr[i][2]].textContent == "X"
     ) {
       result = "победили крестики";
       prepareResult(result);
@@ -52,7 +51,7 @@ function check() {
     ) {
       result = "победили нолики";
       prepareResult(result);
-    } 
+    }
   }
 }
 
