@@ -44,7 +44,8 @@ function check() {
     ) {
       result = "победили крестики";
       prepareResult(result);
-    } else if (
+      break;
+    } if (
       boxes[arr[i][0]].textContent == "0" &&
       boxes[arr[i][1]].textContent == "0" &&
       boxes[arr[i][2]].textContent == "0"
@@ -52,6 +53,10 @@ function check() {
       result = "победили нолики";
       prepareResult(result);
     }
+     else if(move == 9 ) {
+      result = "ничья";
+      prepareResult(result);
+  }
   }
 }
 

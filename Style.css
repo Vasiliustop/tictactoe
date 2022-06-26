@@ -149,5 +149,10 @@
   .footer {
     min-height: 150px;
   }
+
+  .modal-window {
+    top: 50%;
+    left: 22%;
+  }
 }
 
